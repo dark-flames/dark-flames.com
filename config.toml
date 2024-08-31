@@ -1,6 +1,6 @@
 # The URL the site will be built for
 base_url = "https://blog.dark-flames.com/dark-flames.com/"
-
+title = "Darkflames Blog"
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
@@ -10,11 +10,13 @@ build_search_index = true
 theme = "apollo"
 
 [[taxonomies]]
-name = "tags"
-feed = true
+name = "tag"
+feed = false
 
 [[taxonomies]]
 name = "year"
+paginate_by = 3
+feed = false
 
 
 [markdown]
@@ -24,8 +26,8 @@ highlight_code = true
 
 [extra]
 menu = [
-  { name = "/posts", url = "/posts", weight = 1 },
-  { name = "/tags", url = "/tags", weight = 2 },
+  { name = "/tags", url = "/tags", weight = 1 },
+  { name = "/archive", url = "/archive", weight = 2 },
   { name = "/resume", url = "/resume", weight = 3 },
 ]
 
@@ -38,5 +40,3 @@ socials = [
 ]
   
 insert_anchor_links = "heading"
-
-dynamic_note = true

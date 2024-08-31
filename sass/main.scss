@@ -32,6 +32,71 @@ html {
   word-wrap: break-word;
 }
 
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.page-item {
+  margin: 0;
+  text-align: center;
+  border-top: 1px solid var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+  border-left: 1px solid var(--primary-color);
+}
+.page-item:last-child {
+  border-right: 1px solid var(--primary-color);
+}
+
+.page-item-others {
+  background-color: var(--bg-0);
+  color: var(--text-0);
+  transition: all 300ms ease-in-out;
+}
+
+.page-item-others:hover {
+  background-color: var(--primary-color);
+  color: var(--hover-color);
+  transition: all 300ms ease-in-out;
+}
+
+.page-item-current {
+  background-color: var(--primary-color);
+  color: var(--hover-color);
+  transition: all 300ms ease-in-out;
+}
+
+.page-item-current:hover {
+  background-color: var(--bg-0);
+  color: var(--text-0);
+  transition: all 300ms ease-in-out;
+}
+
+.page-iter {
+  padding: 0 10px;
+  line-height: 30px;
+}
+
+.page-num {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px
+}
+
+.page-link {
+  border-bottom: none;
+  background-color: inherit;
+  color: inherit;
+}
+
+.page-link:hover {
+  border-bottom: none;
+  background-color: inherit;
+  color: inherit;
+}
+
 @media all and (min-width:600px) {
   html {
     font-size: 16.5px;

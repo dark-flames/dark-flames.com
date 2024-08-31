@@ -1,0 +1,24 @@
+{% extends "index.html" %}
+
+{% block main_content %}
+
+<div class="tag-cloud">
+    {% block title %}
+        {{ post_macros::page_header(title=page.title) }}
+    {% endblock title %}
+
+    <main class="list">
+        <ul class="tags">
+            {% set taxonomy = get_taxonomy(kind=page.extra.kind)%}
+            {% for term in  taxonomy.items%}
+            <li>
+                <a href="{{ term.permalink | safe }}">
+                    {{ term.name | title }} ({{ term.pages | length }} post{{ term.pages | length | pluralize }})
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </main>
+</div>
+
+{% endblock main_content %}
