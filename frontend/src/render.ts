@@ -332,6 +332,7 @@ window.typstBookRenderPage = function (
       .then(buffer => new Uint8Array(buffer));
 
     const t1 = performance.now();
+
     return new Promise(resolve => {
       return plugin.runWithSession(sessionRef => {
         return new Promise(async doDisposeSession => {
