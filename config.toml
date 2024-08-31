@@ -29,7 +29,7 @@ highlight_code = true
 menu = [
   { name = "/tags", url = "/tags", weight = 1 },
   { name = "/archive", url = "/archive", weight = 2 },
-  { name = "/resume", url = "/resume", weight = 3 },
+  { name = "/cv", url = "/cv", weight = 3 },
 ]
 
 socials = [
