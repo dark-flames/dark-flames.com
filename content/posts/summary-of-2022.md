@@ -34,20 +34,20 @@ year = ["2023"]
 
 新房子相比以前大了不少，可以分开工作学习和休息的空间，有不用蜷缩的浴缸，更大的厨房对于料理爱好者也算是福音。花了大概一周时间才完全布置好新家，紧接着办完入学手续，然后忐忑不安地给未来的教授发了第一封邮件。
 
-虽说从2021年就断断续续学了许多 PL 相关的东西，但是每次想读一些感兴趣的东西都会因为自己对一些基础知识的不了解而放弃。因为 master 真的要全心做这方面的研究，所以我决定在剩下的假期读一些基础性的资料。大概一个多月的空闲时间里，读了 PFPL(Practical Foundations for Programming Languages) 的前半本，并且依照去年做完一部分 SF 的记忆写完了 PLFA(Programming Language Foundations in Agda) 的第一部分。 除此之外还继续给 [Aya](https://www.aya-prover.org/) 做了一点微小的工作，但是那时的我对 dependent type 理解的并不好，所以也遇到了很多困难。
+虽说从2021年就断断续续学了许多 PL 相关的东西，但是每次想读一些感兴趣的东西都会因为自己对一些基础知识的不了解而放弃。因为 master 真的要全心做这方面的研究，所以我决定在剩下的假期读一些基础性的资料。大概一个多月的空闲时间里，读了 PFPL（Practical Foundations for Programming Languages）的前半本，并且依照去年做完一部分 SF 的记忆写完了 PLFA（Programming Language Foundations in Agda）的第一部分。 除此之外还继续给 [Aya](https://www.aya-prover.org/) 做了一点微小的工作，但是那时的我对 dependent type 理解的并不好，所以也遇到了很多困难。
 
 
 # 第一学期
 
 我的 program 大概要在两年时间通过上课拿到20个学分，差不多10门课，一般都在第一年修完。不过感兴趣的内容不是很多，我从本科开始对学校的课程都比较摆烂，时间主要花在研究自己喜欢的内容。
 
-除了上课之外，研究室还有各种轮讲，一个是比较经典的 TAPL(Type and Programming Languages)，内容跟春假读过的 PFPL 基本一致，但是老一些；另一个是数学练习，每周选一道题目来做，主要是集合论、一些代数结构、比较基础的范畴论。
+除了上课之外，研究室还有各种轮讲，一个是比较经典的 TAPL（Type and Programming Languages），内容跟春假读过的 PFPL 基本一致，但是老一些；另一个是数学练习，每周选一道题目来做，主要是集合论、一些代数结构、比较基础的范畴论。
 
-我很喜欢每周研究会的 seminar，每个人差不多一个学期要做两次 presentation。我整个第一学期学习和研究的内容基本都是按照 seminar presentation划分的。首先开学的两个月主要根据千里冰封的 note（[Type theories in category theory](https://arxiv.org/abs/2107.13242) ）来学习范畴论和类型论的范畴语义。虽说前后差不多有两个月时间，但是密度最高的是临近 presentation 前的两周。一方面写完了 STLC 部分的 slide，另一方面嫌内容太少加上了后面 dependent type 的部分。其实这是第一次讲类似的 presentation，也没有时间准备稿子，总体来说流利度和内容都比较满意，但是因为时间问题最后一部分没讲完。紧接着趁着天气还没完全热起来，花了一个周末去和歌山泡了一次温泉。
+我很喜欢每周研究会的 seminar，每个人差不多一个学期要做两次 presentation。我整个第一学期学习和研究的内容基本都是按照 seminar presentation划分的。首先开学的两个月主要根据千里冰封的 note（[Type theories in category theory](https://arxiv.org/abs/2107.13242)）来学习范畴论和类型论的范畴语义。虽说前后差不多有两个月时间，但是密度最高的是临近 presentation 前的两周。一方面写完了 STLC 部分的 slide，另一方面嫌内容太少加上了后面 dependent type 的部分。其实这是第一次讲类似的 presentation，也没有时间准备稿子，总体来说流利度和内容都比较满意，但是因为时间问题最后一部分没讲完。紧接着趁着天气还没完全热起来，花了一个周末去和歌山泡了一次温泉。
 
 在这段时间，我开始注意到自己的注意力问题，克服自己的不怎么流利的日语去看了精神科医生，确诊了 ADHD，并开始吃药，确实改善了一部分专注力的问题。
 
-第二个 presentation 是之前一直想学但是没时间学的东西，HoTT(Homotopy Type Theory)，因为两个 presentation 之间只有一个半月的时间，内容的量和难度也更大，所以花了差不多一个月的时间看 The HoTT Book 和各种 Talk。整个过程比我预想的顺利，topological 的类型论模型好像出乎意料的易于理解，感觉也是从这开始，我才真正意义上理解了 MLTT。最后两周准备了 slide，因为时间关系 higher inductive type 的部分讲的比较粗略。最后感觉比第一次更满意，对于没准备过的问题也回答的比较流畅。
+第二个 presentation 是之前一直想学但是没时间学的东西，HoTT（Homotopy Type Theory），因为两个 presentation 之间只有一个半月的时间，内容的量和难度也更大，所以花了差不多一个月的时间看 The HoTT Book 和各种 Talk。整个过程比我预想的顺利，topological 的类型论模型好像出乎意料的易于理解，感觉也是从这开始，我才真正意义上理解了 MLTT。最后两周准备了 slide，因为时间关系 higher inductive type 的部分讲的比较粗略。最后感觉比第一次更满意，对于没准备过的问题也回答的比较流畅。
 
 之后时间来到七月，基本都在准备期末和各种课的 final report。其中我教授的课有一个 assignment 需要写大量关于编程语言 evaluation 的导出树，于是开了一个项目花了一周用 Rust 实现了自动推导， 顺便实现了 System F 以下的各种类型系统。
 
@@ -68,12 +68,12 @@ year = ["2023"]
 
 当时的我还在犹豫 master 毕业的去向：就职或者读 doc，当时更偏向于就职恰钱，然后随便投了实习简历并参加了某血汗工厂的就职 workshop。参加完之后感觉大厂 SDE 的无聊程度超乎我的想象。糊墙、各种炼丹、跟上司/客户扯皮需求，有趣程度被搞科研碾压，甚至还不如刚上大学的那几年的工作内容。之后的面试也是完全没花时间准备地参加了，依靠高中算法竞赛的一些记忆做对了所有的算法题，但是大概因为 behavior questions 和比较少的 hc（至今仍不清楚具体挂在哪里）并没有通过。这些经历让我越来越倾向于读 doc，一方面不想跟转码人一起卷基础算法题和小作文，另一方面也真的对学术和科研感兴趣。
 
-因为当时正在研究 algebraic effect，又读了 call-by-push-value 的论文，于是这学期第一个 presentation 是关于 algebra 和 PL 的，主要内容基于 Guest0x0 的 note ([代数与 PL 之恋](https://guest0x0.xyz/PL-and-universal-algebra/PL-and-universal-algebra.pdf)). 大概花了一周时间查阅相关资料准备 slide。虽然内容有点多，但讲的时候因为有同学请假，很幸运的获得了两倍的时间。
+因为当时正在研究 algebraic effect，又读了 call-by-push-value 的论文，于是这学期第一个 presentation 是关于 algebra 和 PL 的，主要内容基于 Guest0x0 的 note（[代数与 PL 之恋](https://guest0x0.xyz/PL-and-universal-algebra/PL-and-universal-algebra.pdf)）. 大概花了一周时间查阅相关资料准备 slide。虽然内容有点多，但讲的时候因为有同学请假，很幸运的获得了两倍的时间。
 
 这之后趁着周末和学园祭去了东京，见到了 Inoki 跟史莱姆。此时正值日本完全放开入境，东京被外国游客塞满，这几天感受到了前所未有的压抑感和对大城市的厌恶，突然发现生活在京都这样宽敞的城市是一件非常美好的事。之后去了青森，沿着满是青苔和枯木的奥入濑溪流徒步，拍到了2022年最满意的照片：
 ![aomori](/images/2022-aomori.jpg)
 
-第二个 presentation 的内容也是一直想学但是没有专门花时间的东西，cubical type theory。虽然之前写 Aya 的时候读过千里冰封的 note ([A tutorial on implementing De Morgan cubical type theory](https://arxiv.org/abs/2210.08232)), 但是一直没抽出时间来系统学习。开始准备的时候只剩两周，这段时间效率拉满，堪称一年中的高光。大概花了一周时间读完了包括 [CCHM](https://arxiv.org/abs/1611.02108) 在内的论文和一些关于实现细节的 note。然后花了半周去听了 HoTTEST 关于 CuTT 的所有 talk，在只剩两天的时候才开始准备 slide。从结果上来说，无论是理解程度还是流利程度上都算是我这一年最满意的一次 presentation。
+第二个 presentation 的内容也是一直想学但是没有专门花时间的东西，cubical type theory。虽然之前写 Aya 的时候读过千里冰封的 note（[A tutorial on implementing De Morgan cubical type theory](https://arxiv.org/abs/2210.08232)）, 但是一直没抽出时间来系统学习。开始准备的时候只剩两周，这段时间效率拉满，堪称一年中的高光。大概花了一周时间读完了包括 [CCHM](https://arxiv.org/abs/1611.02108) 在内的论文和一些关于实现细节的 note。然后花了半周去听了 HoTTEST 关于 CuTT 的所有 talk，在只剩两天的时候才开始准备 slide。从结果上来说，无论是理解程度还是流利程度上都算是我这一年最满意的一次 presentation。
 
 年末开始入坑钢笔，开始用笔记本并把论文打印出来看，体验确实吊打一切 iPad 或电子纸。本想着一年差不多结束，但是做第二次 presentation 的时候想到了一些不错的 idea，所以最后一个月都在研究 gradual typing 和 dependent type 相关的内容。
 
@@ -95,6 +95,6 @@ year = ["2023"]
 
 * **学业**：希望自己能强迫自己交流和分享来督促自己学更多东西，也希望能减少在奶头乐和社交媒体上花费的时间，改善专注力之类的问题，下一个年末能更有充实感。 
 * **科研**：希望有更多有价值的 idea，能有成果诞生，并着手做 publication 相关的事情。
-* **语言**：日语(其实英语也有点)的词汇量对生活产生了或多或少的影响，希望能不那么懒，恶补一下词汇量。
+* **语言**：日语（其实英语也有点）的词汇量对生活产生了或多或少的影响，希望能不那么懒，恶补一下词汇量。
 * **摄影和旅行**：日本大部分地方都去的差不多了，可能回更多的以放松的目的旅行，但希望能拍到更多让自己内心高潮的照片。
 * **其他**：希望能有机会回国几周，想贴到更多的朋友。
