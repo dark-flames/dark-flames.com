@@ -25,8 +25,11 @@ menu = [
 ]
 
 socials = [
-  { name = "twitter", url = "https://twitter.com/Darkf1ames", icon = "twitter" },
+  { name = "email", url = "mailto:darkf1ames@pm.me", icon = "email" },
+  { name = "telegram", url = "https://t.me/Dark_flames", icon = "telegram" },
   { name = "github", url = "https://github.com/dark-flames", icon = "github" },
+  { name = "twitter", url = "https://twitter.com/Darkf1ames", icon = "twitter" },
+  { name = "instagram", url = "https://www.instagram.com/darkf1ames", icon = "instagram" },
 ]
   
 insert_anchor_links = "heading"
