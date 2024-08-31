@@ -49,7 +49,7 @@
     vertical-align: middle;
 }
 
-.copyright-right a {
+.copyright a {
     border-bottom-width: 2px;
 }
 
@@ -76,11 +76,7 @@
     .copyright {
         font-size: 10px;
     }
-    .copyright-split {
-        border-right: 0.5px solid var(--primary-color);
-        border-left: 0.5px solid var(--primary-color);
-    }
-    .copyright-right a {
+    .copyright a {
         border-bottom-width: 1px;
     }
 }
