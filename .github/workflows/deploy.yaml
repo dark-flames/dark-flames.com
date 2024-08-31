@@ -1,6 +1,9 @@
 name: Deploy
 
-on: workflow_dispatch
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   deploy:
@@ -8,6 +11,8 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v4
+        with:
+          submodules: 'true'
       - name: deploy
         uses: dark-flames/apollo-typst@action-v1
         with:
