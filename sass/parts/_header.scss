@@ -1,0 +1,163 @@
+.page-header {
+    font-size: 2.5em;
+    line-height: 100%;
+    font-family: var(--header-font);
+    margin: 0px 0px 1rem 0px;
+}
+
+.page-header-space {
+    width: 100%;
+    height: 4rem;
+}
+
+.centered-header {
+    font-family: var(--header-font);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 4em;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1em 0;
+    gap: 0.5em;
+}
+
+header .main {
+    display: flex;
+    flex-grow: 0;
+    justify-content: flex-start;
+    align-items: flex-end;
+    font-size: 1.5rem;
+}
+header .main a {
+    display: inline-block;
+}
+
+.socials {
+    display: flex;
+    flex-grow: 0;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 6px;
+}
+
+header nav {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 0.5em;
+}
+
+header .social img,
+header #dark-mode-toggle img {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+#dark-mode-toggle {
+    justify-content: center;
+}
+
+.social {
+    border-bottom: unset;
+    background-image: unset;
+}
+
+.social>img {
+    border: unset;
+    width: 24px;
+    height: 24px;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 959px) {
+    .page-header-space {
+        height: 2rem;
+    }
+}
+@media (max-width: 510px) {
+    header .socials {
+        display: none;
+    }
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 420px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .page-header-space {
+        height: 1rem;
+    }
+}
+
+.meta {
+    color: #999;
+    display: flexbox;
+    /* This changes the meta class to use flexbox, which ensures inline display */
+    align-items: center;
+    /* Aligns items vertically in the middle */
+    flex-wrap: wrap;
+    /* Allows items to wrap as needed */
+}
+
+#dark-mode-toggle>img {
+    display: none;
+    width: 15px;
+    height: 15px;
+    border: unset;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 1.2rem;
+    margin-top: 2em;
+}
+
+h1::before {
+    color: var(--primary-color);
+    content: "# ";
+}
+
+h2::before {
+    color: var(--primary-color);
+    content: "## ";
+}
+
+h3::before {
+    color: var(--primary-color);
+    content: "### ";
+}
+
+h4::before {
+    color: var(--primary-color);
+    content: "#### ";
+}
+
+h5::before {
+    color: var(--primary-color);
+    content: "##### ";
+}
+
+h6::before {
+    color: var(--primary-color);
+    content: "###### ";
+}
