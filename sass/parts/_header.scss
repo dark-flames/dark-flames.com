@@ -40,15 +40,6 @@ header .main a {
     display: inline-block;
 }
 
-.socials {
-    display: flex;
-    flex-grow: 0;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: flex-end;
-    gap: 6px;
-}
-
 header nav {
     display: flex;
     flex-grow: 1;
@@ -59,7 +50,6 @@ header nav {
     gap: 0.5em;
 }
 
-header .social img,
 header #dark-mode-toggle img {
     width: 16px;
     height: 16px;
@@ -70,26 +60,11 @@ header #dark-mode-toggle img {
     justify-content: center;
 }
 
-.social {
-    border-bottom: unset;
-    background-image: unset;
-}
-
-.social>img {
-    border: unset;
-    width: 24px;
-    height: 24px;
-}
 
 /* Mobile-specific adjustments */
 @media (max-width: 959px) {
     .page-header-space {
         height: 2rem;
-    }
-}
-@media (max-width: 510px) {
-    header .socials {
-        display: none;
     }
 }
 

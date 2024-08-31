@@ -1,6 +1,7 @@
 @import "../themes/apollo/sass/parts/_cards.scss";
 @import "../themes/apollo/sass/parts/_code.scss";
 @import "parts/_header.scss";
+@import "parts/_footer.scss";
 @import "parts/_image.scss";  
 @import "../themes/apollo/sass/parts/_toc.scss";
 @import "../themes/apollo/sass/parts/_note.scss";
@@ -30,6 +31,10 @@ html {
   margin: 0 auto;
   padding: 0 12px;
   word-wrap: break-word;
+  min-height: 98vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .pagination {
