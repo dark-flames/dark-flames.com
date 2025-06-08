@@ -1,0 +1,37 @@
+
+<footer>
+    <div class="page-header-space"></div>
+    <div class="footer">
+        <div class="socials">
+            {%- if config.generate_feeds -%}
+              {%- for feed in config.feed_filenames -%}
+    
+              {%- if feed is containing('atom') -%}
+              <a type="application/atom+xml" href="{{ get_url(path=feed, trailing_slash=false) | safe }}" class="social" target="_blank" title="{{ config.title }} Atom Feed">
+                <img alt="atom" src={{ get_url(path="social_icons/rss.svg") }}>
+              {%- elif feed is containing('rss') -%}
+              <a type="application/rss+xml" href="{{ get_url(path=feed, trailing_slash=false) | safe }}" class="social" target="_blank" title="{{ config.title }} RSS Feed">
+                <img alt="rss" src={{ get_url(path="social_icons/rss.svg") }}>
+              </a>
+              {% endif -%}
+    
+              {%- endfor -%}
+            {%- endif -%}
+            {% for social in config.extra.socials | default(value=[]) %}
+            <a rel="me" href="{{ social.url }}" class="social" target="_blank" title={{ social.name }}>
+                <img alt={{ social.name }} src={{ get_url(path="social_icons/" ~ social.icon ~ ".svg") }}>
+            </a>
+            {% endfor %}
+        </div>
+        <div class="copyright">
+            <div class="copyright-left">
+                &copy;{{ now() | date(format="%Y") }}  dark-flames
+            </div>
+            <div class="copyright-split"></div>
+            <div class="copyright-right">
+                Content on this site is licensed under a 
+                <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0 International license</a>.
+            </div>
+        </div>
+    </div>
+  </footer>

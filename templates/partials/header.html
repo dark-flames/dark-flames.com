@@ -207,8 +207,17 @@
     {% endif %}
 
     {# RSS #}
-    <link rel="alternate" type="application/atom+xml" title="{{ config.title }}" href="{{ get_url(path="atom.xml", trailing_slash=false) }}">
+    {%- if config.generate_feeds -%}
+        {%- for feed in config.feed_filenames -%}
 
+        {%- if feed is containing('atom') -%}
+        <link rel="alternate" type="application/atom+xml" title="{{ config.title }}" href="{{ get_url(path=feed, trailing_slash=false) | safe }}"/>
+        {%- elif feed is containing('rss') -%}
+        <link rel="alternate" ype="application/rss+xml" title="{{ config.title }}" href="{{ get_url(path=feed, trailing_slash=false) | safe }}"/>
+        {% endif -%}
+
+        {%- endfor -%}
+    {%- endif -%}
 
     {% set theme = config.extra.theme | default(value="toggle") %}
     {% if theme == "dark" %}
