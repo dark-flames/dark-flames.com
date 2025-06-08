@@ -1,0 +1,24 @@
+{% extends "index.html" %}
+{% import "macros/paginator.html" as paginator %}
+
+{% block main_content %}
+
+    <div class="page-header">
+        {{ taxonomy.name | title }}:: {{ term.name }}<span class="primary-color" style="font-size: 1.6em">.</span>
+    </div>
+
+    {%- if paginator %}
+        {%- set show_pages = paginator.pages -%}
+    {% else %}
+        {%- set show_pages = term.pages -%}
+    {% endif -%}
+
+    <main class="list">
+    {{ post_macros::list_posts(pages=show_pages) }}
+    </main>
+
+    {% if paginator and paginator.total_pages > 1 %}
+        {{ paginator::show_paginator(paginator=paginator) }}
+    {% endif %}
+
+{% endblock main_content %}

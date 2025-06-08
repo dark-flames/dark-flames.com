@@ -1,6 +1,6 @@
 +++
 title = "My Resume"
-path = "resume"
+path = "/resume"
 
 [extra]
 typst = "resume"

@@ -1,0 +1,36 @@
+{% macro show_paginator(paginator) %}
+<ul class="pagination">
+    {% set pages_end = paginator.number_pagers + 1 %}
+    {% if paginator.number_pagers > 5 %}
+        { % set pages_end = 6 %}
+    {% endif %}
+
+    {% if paginator.previous %}
+        <span class="page-item page-item-others page-iter page-prev">
+            <a href={{ paginator.previous }} class="page-link" aria-label="Previous"><span aria-hidden="true">← Prev</span></a>
+        </span>
+    {% endif %}
+
+    
+
+    {% for id in range(start=1, end=pages_end) %}
+            {% if id == paginator.current_index %}
+                <span class="page-item page-item-current page-num ">
+                    <a href={{ paginator.base_url ~ id}} class="page-link">{{ id }}</a>
+                </span>
+            {% else %}
+                <span class="page-item page-item-others page-num">
+                    <a href={{ paginator.base_url ~ id}} class="page-link">{{ id }}</a>
+                </span>
+                
+            {% endif %}
+        
+    {% endfor %}
+
+    {% if paginator.next %}
+        <span class="page-item page-item-others page-iter page-next">
+            <a href={{ paginator.next }} class="page-link" aria-label="Next"><span aria-hidden="true">Next →</span></a>
+        </span>
+    {% endif %}
+</ul>
+{% endmacro %}

@@ -1,8 +1,6 @@
 +++
-title= "Apollo Theme"
-template = "homepage.html"
+paginate_by = 10
+title = "Posts"
+
+sort_by = "date"
 +++
-
-Thanks for checking out this theme!
-
-Checkout all the [options you can configure](./posts/configuration) and the [example pages](./tags/example/).[Test Typst](./posts/test)
