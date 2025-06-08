@@ -9,7 +9,12 @@ build_search_index = true
 
 theme = "apollo"
 
-taxonomies = [{ name = "tags", feed = true }]
+[[taxonomies]]
+name = "tags"
+feed = true
+
+[[taxonomies]]
+name = "year"
 
 
 [markdown]
